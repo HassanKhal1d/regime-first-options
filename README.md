@@ -1,2 +1,3 @@
-# wti-vol-engine
- From-scratch Black-Scholes pricing, IV inversion, vol surface visualization, and IV–HV spread signal on USO options. Built to make Natenberg executable.
+# Regime-aware options trading framework 
+
+- regime-first-options is a Python framework for trading options on assets whose dynamics aren't known in advance. It diagnoses the underlying's regime (random walk, mean-reverting) from data before pricing anything, propagates calibration uncertainty into fair-value bands, and sizes positions against that uncertainty rather than against a point estimate. The framework is built around a regime registry so additional regimes can be added in later phases without surgery on the decision pipeline. Built in preparation for IMC Prosperity 5; validated against the −4,225 PnL day-4 loss of its predecessor.
